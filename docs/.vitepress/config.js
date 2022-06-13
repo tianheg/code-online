@@ -65,10 +65,9 @@ function sidebarCodewars() {
       text: '',
       // collapsible: true,
       items: [
-        {
-          text: 'Are You Playing Banjo?',
-          link: '/codewars/are-you-playing-banjo',
-        },
+        {text: 'Are You Playing Banjo?',link: '/codewars/are-you-playing-banjo', },
+        {text: 'Convert a String to a Number!',link: '/codewars/string-to-number', },
+        {text: 'Convert a Number to a String!',link: '/codewars/number-to-string', },
       ],
     },
   ];
