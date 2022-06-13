@@ -8,7 +8,7 @@
 
 给出数字到字母的映射「与电话键盘相同」。注意 1 不含字母
 
-![](/images/200px-telephone-keypad2svg.webp)
+![](/200px-telephone-keypad2svg.webp)
 
 ## 题解[^fn:2]
 

@@ -18,7 +18,7 @@
 
 链表的节点：
 
-![Node of Linked List](/images/linked-list.svg)
+![Node of Linked List](/linked-list.svg)
 
 不知道链表的相关知识，这道题目不会做。照着题解抄了一遍。
 
