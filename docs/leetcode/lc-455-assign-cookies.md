@@ -1,14 +1,12 @@
 # LC455. 分发饼干
 
-今天思考 LeetCode 题目：分发饼干[^fn:1]。
-
-## 题目描述 {#题目描述}
+https://leetcode.cn/problems/assign-cookies/
 
 假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。
 
 对每个孩子 i，都有一个胃口值 g[i]，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j，都有一个尺寸 s[j] 。如果 s[j] &gt;= g[i]，我们可以将这个饼干 j 分配给孩子 i，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值。
 
-## 解题 {#解题}
+## 解题
 
 我的错误示例：
 
@@ -26,7 +24,9 @@ var findContentChildren = function (g, s) {
 }
 ```
 
-来自这里的解决方案[^fn:2]：
+来自这里的解决方案：
+
+https://leetcode.cn/problems/assign-cookies/solution/fen-fa-bing-gan-by-leetcode-solution-50se/
 
 ```js
 /**
@@ -53,7 +53,7 @@ let findContentChildren = function (g, s) {
 console.log(findContentChildren([1, 2, 3], [1, 6, 3])) // 3
 ```
 
-解决方案用到了贪心算法[^fn:3]。
+解决方案用到了[贪心算法](https://zhuanlan.zhihu.com/p/53334049)。
 
 贪心算法是寻找 **最优解** 的常用方法。这种方法模式一般将求解过程分成若干步骤，但每一步都应用贪心原则，选取当前状态下 **最好/最优的选择** 。基本步骤：
 
@@ -64,7 +64,3 @@ console.log(findContentChildren([1, 2, 3], [1, 6, 3])) // 3
 LeetCode 第 860 题（柠檬水找零）也涉及了贪心算法。
 
 代码中的一部分，与实现归并排序的代码相类似。
-
-[^fn:1]: <https://leetcode-cn.com/problems/assign-cookies/>
-[^fn:2]: <https://leetcode-cn.com/problems/assign-cookies/solution/fen-fa-bing-gan-by-leetcode-solution-50se/>
-[^fn:3]: <https://zhuanlan.zhihu.com/p/53334049>

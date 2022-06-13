@@ -1,8 +1,6 @@
 # LC101. 对称二叉树
 
-今天思考 LeetCode 题目：对称二叉树[^fn:1]。
-
-## 题目描述
+https://leetcode.cn/problems/symmetric-tree/
 
 给定一个二叉树，检查它是否是镜像对称的。
 
@@ -28,7 +26,9 @@
 
 进阶：可以用递归和迭代两种方法解决这个问题吗？
 
-## 题解[^fn:2]
+## 题解
+
+https://leetcode.cn/problems/symmetric-tree/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-er-ch-hnjo/
 
 ```js
 /**
@@ -69,6 +69,3 @@ var isSymmetric = function (root) {
   return compareNode(root.left, root.right)
 }
 ```
-
-[^fn:1]: <https://leetcode-cn.com/problems/symmetric-tree/>
-[^fn:2]: <https://leetcode-cn.com/problems/symmetric-tree/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-er-ch-hnjo/#:~:text=Right)%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20true%3B%0A%7D-,JavaScript,-%E9%80%92%E5%BD%92%E5%88%A4%E6%96%AD>

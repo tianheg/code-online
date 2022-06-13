@@ -1,16 +1,16 @@
 # LC17. 电话号码的字母组合
 
-今天思考 LeetCode 题目：电话号码的字母组合[^fn:1]。
+https://leetcode.cn/problems/letter-combinations-of-a-phone-number/
 
-## 题目描述
+Given a string containing digits from `2-9` inclusive, return all possible letter combinations that the number could represent. Return the answer in **any order**.
 
-给定一个仅包含数字 `2-9` 的字符串，返回它所有能表示的字母组合，答案可以按任意顺序返回。
-
-给出数字到字母的映射「与电话键盘相同」。注意 1 不含字母
+A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
 ![](/200px-telephone-keypad2svg.webp)
 
-## 题解[^fn:2]
+## Solutions
+
+<https://dev.to/seanpgallivan/solution-letter-combinations-of-a-phone-number-1n91>
 
 ```javascript
 /**
@@ -44,6 +44,3 @@ let letterCombinations = function (D) {
 ```
 
 每个数字代表个几个字母，需要将这些数字下的字母区分开。可以使用深度优先搜索（DFS，depth-first search）、迭代、查找表。
-
-[^fn:1]: <https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/>
-[^fn:2]: <https://dev.to/seanpgallivan/solution-letter-combinations-of-a-phone-number-1n91>

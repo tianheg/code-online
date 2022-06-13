@@ -1,8 +1,6 @@
 # LC167. 两数之和 II - 输入有序数组
 
-今天思考 LeetCode 题目：两数之和-输入有序数组[^fn:1]。
-
-## 题目描述
+https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/
 
 给定一个已按照「非递减」顺序排列的整数数组 `numbers` ，从数组中找出两个数满足相加之和等于目标数 `target` 。
 
@@ -11,6 +9,10 @@
 可假设每个输入只对应唯一的答案，而且不可以重复使用相同的元素。
 
 ## 题解
+
+https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/solution/fan-shi-you-xu-shu-zu-jie-ti-tao-lu-yong-qgoq/
+
+使用双指针法
 
 ```js
 /**
@@ -32,8 +34,3 @@ let twoSum = function (numbers, target) {
   }
 }
 ```
-
-使用双指针法
-
-[^fn:1]: <https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/>
-[^fn:2]: <https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/solution/fan-shi-you-xu-shu-zu-jie-ti-tao-lu-yong-qgoq/>

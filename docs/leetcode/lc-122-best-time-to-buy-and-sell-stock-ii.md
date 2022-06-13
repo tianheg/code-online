@@ -1,8 +1,6 @@
 # LC122. 买卖股票的最佳时机 II
 
-今天思考 LeetCode 题目：买卖股票的最佳时机 II[^fn:1]。
-
-## 题目描述
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/
 
 给定一个数组 `prices` ，其中 `prices[i]` 是一支给定股票第 `i` 天的价格。
 
@@ -15,7 +13,11 @@
 - `1 <= prices.length <= 3 * 10^4`
 - `0 <= prices[i] <= 10^4`
 
-## 题解[^fn:2]
+## 题解
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/solution/mai-mai-gu-piao-de-zui-jia-shi-ji-ii-by-leetcode-s/
+
+动态规划
 
 ```js
 /**
@@ -23,20 +25,28 @@
  * @return {number}
  */
 let maxProfit = function (prices) {
-  const n = prices.length
+  const n = prices.length;
   let dp0 = 0,
-    dp1 = -prices[0]
+    dp1 = -prices[0];
   for (let i = 1; i < n; ++i) {
-    let newDp0 = Math.max(dp0, dp1 + prices[i])
-    let newDp1 = Math.max(dp1, dp0 - prices[i])
-    dp0 = newDp0
-    dp1 = newDp1
+    let newDp0 = Math.max(dp0, dp1 + prices[i]);
+    let newDp1 = Math.max(dp1, dp0 - prices[i]);
+    dp0 = newDp0;
+    dp1 = newDp1;
   }
-  return dp0
-}
+  return dp0;
+};
 ```
 
-题解使用了「动态规划」这一方法。
+贪心算法
 
-[^fn:1]: <https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/>
-[^fn:2]: <https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/mai-mai-gu-piao-de-zui-jia-shi-ji-ii-by-leetcode-s/>
+```js
+var maxProfit = function (prices) {
+  let ans = 0;
+  let n = prices.length;
+  for (let i = 1; i < n; ++i) {
+    ans += Math.max(0, prices[i] - prices[i - 1]);
+  }
+  return ans;
+};
+```

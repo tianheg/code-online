@@ -1,8 +1,6 @@
 # LC94. 二叉树的中序遍历
 
-今天思考 LeetCode 题目：二叉树的中序遍历[^fn:1]。
-
-## 题目描述 {#题目描述}
+https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 
 给定一个二叉树的根节点 `root` ，返回它的 **中序** 遍历。
 
@@ -11,7 +9,9 @@
 - 树中节点数目在范围 `[0, 100]` 内
 - `-100 <= Node.val <= 100`
 
-## 题解[^fn:2] {#题解}
+## 题解
+
+https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/er-cha-shu-de-zhong-xu-bian-li-by-leetcode-solutio/
 
 递归思想。
 
@@ -42,6 +42,3 @@ let inorderTraversal = function (root) {
   return res
 }
 ```
-
-[^fn:1]: <https://leetcode-cn.com/problems/binary-tree-inorder-traversal/>
-[^fn:2]: <https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/er-cha-shu-de-zhong-xu-bian-li-by-leetcode-solutio/>

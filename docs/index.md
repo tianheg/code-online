@@ -14,8 +14,8 @@ hero:
       link: https://github.com/tianheg/code-online
 
 features:
-  - title: LeetCode(Chinese/中文)
+  - title: LeetCode
     details: The World's Leading Online Programming Learning Platform.
-  - title: CodeWars(EN)
+  - title: CodeWars
     details: A platform that helps you learn, train, and improve your coding skills by solving programming tasks of many types and difficulty levels.
 ---
